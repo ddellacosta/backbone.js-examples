@@ -1,12 +1,12 @@
 # Backbone.js Tutorials/Explorations
 
-This is a collection of simple apps meant to illustrate and explore various techniques used in building Backbone.js apps.  The motivation behind this was that the official [Backbone.js reference](http://backbonejs.org/), while filled with useful information, suffers a bit from being "too close too the code."  Many things are glossed over with the reasoning that Backbone.js is open-ended and doesn't restrict you (which is true).  However, there are definitely some ways that Backbone.js "suggests" you should structure your code, and these can only be discovered through trial-and-error and navigating the collection of sometimes out-of-date/badly/awkwardly/unconvincingly written tutorials and documentation resources online.
+This is a collection of simple apps meant to illustrate and explore various techniques used in building Backbone.js apps.  The motivation behind this was that the official [Backbone.js reference](http://backbonejs.org/), while filled with useful information, suffers a bit from being "too close too the code."  Many things are glossed over with the reasoning that Backbone.js is open-ended and doesn't restrict you (which is true).  However, there are definitely some ways that Backbone.js "suggests" you should structure your code, and it is hard to figure these out with what the official docs provide, outside of trial-and-error messing around and navigating the collection of sometimes out-of-date/badly/awkwardly/unconvincingly written tutorials and documentation resources online (although for the record there's a tremendous amount of great stuff online as well).
 
-The goal of this project is to try and mitigate some of these issues, as well as collect what I believe to be the most advanced, best and most useful documentation resources together in one place.
+The goal of this project is to try and mitigate some of these issues, as well as collect what I believe to be the more useful documentation resources together in one place.
 
 **A caveat: these are not aimed at beginning JS developers, they make a lot of assumptions about being comfortable with OO/Functional programming concepts as well the MVC design pattern.  In picking up Backbone.js I was explicitly attempting to map my MVC experience (primarily in Ruby on Rails) onto this framework (even though Backbone.js doesn't explicitly aim to provide an MVC framework).  These examples reflect that.**
 
-The code examples represent self-tutorials (or "explorations" or what-have-you) which advance in terms of complexity, and in terms of what I thought were the basic concepts which I wanted to grasp, in the order I wanted to grasp them.  For example,
+The code examples represent self-tutorials (or "explorations" or what-have-you) which progress roughly in terms of complexity, and in terms of what I thought were the basic concepts which I wanted to grasp, in the order I wanted to grasp them.
 
 1. Super Basic 1 - This is basically "hello world" in Backbone.js. First I wanted to understand how to dump out Model data to Templates.  Backbone.js doesn't provide much guidance on how to use its View's render() method (by design), and the example given in the docs is a rather confusing mishmash of underscore.js functionality and jQuery, so it took me a bit to sort through it all.
 
@@ -48,18 +48,18 @@ These examples basically represent about a week of digging hardcore into Backbon
 
 ## Great Resources I found when I was trying to figure out how Backbone.js works, or should work
 
-* Again, [the official Backbone.js docs](http://documentcloud.github.com/backbone/)
+* Again, [the official Backbone.js docs](http://documentcloud.github.com/backbone/).
 * [Backbone.js patterns](http://ricostacruz.com/backbone-patterns/) - outlines some good strategies especially in approaching templating.
-* [Tim Branyen's backbone boilerplate](https://github.com/backbone-boilerplate) I checked out a few boilerplates, but this is the one I liked the most.  Has a great initializer for the Router which helped me understand the routing, and which I'm using in modified form on the Routing example. (also, see my [first StackOverflow question](http://stackoverflow.com/questions/9939737/how-does-one-listen-to-the-router-respond-to-router-events-in-views-models-i) which was a result of me not understanding how routing works.)
-* The Backbone.js github wiki has a [great page consolidating a lot of documentation web resources](https://github.com/documentcloud/backbone/wiki/Extensions%2C-Plugins%2C-Resources). I have yet to really dig into it, although I know I've already checked out a good number of the items listed through separate Google searches.
+* [Tim Branyen's backbone boilerplate](https://github.com/backbone-boilerplate) - I checked out a few boilerplates, but this is the one I liked the most.  Has a great initializer for the Router which helped me understand the routing, and which I'm using in modified form on the Routing example. (also, see my [first StackOverflow question](http://stackoverflow.com/questions/9939737/how-does-one-listen-to-the-router-respond-to-router-events-in-views-models-i) which was a result of me not understanding how routing works.)
+* The Backbone.js github wiki has a [great page consolidating a lot of web documentation resources](https://github.com/documentcloud/backbone/wiki/Extensions%2C-Plugins%2C-Resources). I have yet to really dig into it, although I know I've already checked out a good number of the items listed through separate Google searches.
 * [This explains why you may need to use the underscore bindAll() method in Backbone.js](http://lostechies.com/derickbailey/2011/06/15/solving-backbones-this-model-view-problem-with-underscore-js/).  It's overall a good article to read just to wrap your head around how Backbone.js works.  I also wanted to link to it to note that these guys have a lot of useful articles on Backbone.js.  They don't always purse a strategy I agree with, but they are obviously thinking hard about how to solve problems "appropriately" in Backbone.js.  Worth checking out.
 
 ## Author
 
 Dave Della Costa.  dave-dellacosta at garage d co d jp
 
-Critiques and suggestions welcome.  If you think I've done something in a stupid or inefficient way I'd love to hear it!  Really!!  If I agree I'll change my code.
+Critiques and suggestions welcome.  If you think I've done something in a inefficient way I'd love to hear it!  If you convince me I'll change my code.
 
-## P.S.
+### P.S.
 
 I always forget, I use the console for some of these which means they probably break IE.  [Here ya go.](http://mozilla.org/firefox/)
