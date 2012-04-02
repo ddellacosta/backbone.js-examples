@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>BACKBONE Tutorial 3: Collections</title>
+
+    <!-- requirements. -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/json2/20110223/json2.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.3.1/underscore-min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/backbone.js/0.9.2/backbone-min.js"></script>
+
+    <script src="collections3.js"></script>
+
+    <script>
+    $(document).ready(function(){
+      /* This time, breaking it out into a separate chunk of 
+         JS to show how we can use Backbone models and collections easily. */
+
+      // Here we create a bunch of models at the same time as the collection.
+      var cats = new AngryCats([
+          new AngryCat({ name: 'Wet Cat', image_path: 'images/cat2.jpg' }),
+          new AngryCat({ name: 'Bitey Cat', image_path: 'images/cat1.jpg' }),
+          new AngryCat({ name: 'Surprised Cat', image_path: 'images/cat3.jpg' })
+      ]);
+
+      // Oh, we forgot this AngryCat...let's add it now!
+      cats.add([new AngryCat({ name: 'Cranky Cat', image_path: 'images/cat4.jpg' })]);
+
+      // Create our view...
+      var catsView = new AngryCatsView({ collection: cats });
+
+      // ...and show it!
+      catsView.render();
+    });
+    </script>
+
+    <!-- Pretty it up. -->
+    <link href="../../bootstrap/css/bootstrap.css" rel="stylesheet">
+
+    <!-- customizations for the table, imgs/buttons, etc. -->
+    <link href="collections3.css" rel="stylesheet">
+
+  </head>
+  <body>
+    <div id="contents">
+
+    <table id='angry_cats' class='table-striped table-bordered'>
+      <tr class='header'>
+	<th class='rank_h'>Rank</th>
+	<th class='name_h'>Name</th>
+	<th class='image_h'>Image</th>
+	<th class='move_rank'></th>
+      </tr>
+    </table>
+
+    <!-- Templates -->
+    <!-- *Remember, anything that you want to register an event on must be part of your view!* -->
+    <script type="text/template" id="angry_cat-template">
+	<td class='rank'><%= rank %></td>
+	<td class='name'><%= name %></td>
+	<td class='image'><img class='angry_cat_pic' src='<%= image_path %>' /></td>
+	<td class='move_rank'>
+	  <div class='rank_up'><img class='rank_up <%= id %>' src='images/up.gif' /></div>
+	  <div class='rank_down'><img class='rank_down <%= id %>' src='images/down.gif' /></div>
+	</td>
+    </script>
+
+    </div>
+  </body>
+</html>

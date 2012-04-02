@@ -1,0 +1,10 @@
+body {
+    font-size: 20px;
+}
+
+div#contents {
+    margin-top: 20px;
+    width: 500px;
+    margin-right: auto;
+    margin-left: auto;
+}
