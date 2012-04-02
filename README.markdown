@@ -4,7 +4,7 @@ This is a collection of simple apps meant to illustrate and explore various tech
 
 The goal of this project is to try and mitigate some of these issues, as well as collect what I believe to be the most advanced, best and most useful documentation resources together in one place.
 
-**A caveat: these are not aimed at beginning developers.  I am an experienced developer, who is used to thinking in MVC terms, and has been building sites that way for years.  So in picking up Backbone.js I was explicitly attempting to map my MVC experience (primarily in Ruby on Rails) onto this framework (even though Backbone.js doesn't explicitly aim to provide an MVC framework).  These examples reflect that.**
+**A caveat: these are not aimed at beginning JS developers, they make a lot of assumptions about being comfortable with OO/Functional programming concepts as well the MVC design pattern.  In picking up Backbone.js I was explicitly attempting to map my MVC experience (primarily in Ruby on Rails) onto this framework (even though Backbone.js doesn't explicitly aim to provide an MVC framework).  These examples reflect that.**
 
 The code examples represent self-tutorials (or "explorations" or what-have-you) which advance in terms of complexity, and in terms of what I thought were the basic concepts which I wanted to grasp, in the order I wanted to grasp them.  For example,
 
@@ -40,15 +40,25 @@ These examples basically represent about a week of digging hardcore into Backbon
 
 * The docs are similarly lightweight.  This is less of a good thing, as it can be quite frustrating getting "hello world" up and running, and the Todos tutorials is quite advanced (and also uses a few older conventions, like 'bind()' instead of 'on()' for events).  The fact is, once you start digging around the web, it seems that there some pretty decent conventions for structuring apps with Backbone.js.
 
-* Mapping this to an MVC concept requires a wee bit of re-thinking.  As it seems the author of [Spine.js](http://spinejs.com/) (which I may be investigating after this, as it also seems very well thought out, a real advance on the ground that Backbone.js has staked out) has realized before me, it may be more accurately to call the "Views" of Backbone.js "Controllers," since that is how they are functioning when considered within an MVC context.  But this naming aside, it's quite easy to map an MVC framework onto Backbone.js.
+* [Mapping this to an MVC concept requires a wee bit of re-thinking.](http://documentcloud.github.com/backbone/#FAQ-mvc)  However, it's not hard to do; Backbone.js is quite flexible and at the same time makes it easy to build an MVC framework from the tools it provides.
 
 * The routing system is still a bit of a mystery.  Honestly, I'm not sure how necessary it is other than to provide appropriate resource URLs...which maybe is the whole point.  But this also means that you are intercepting calls to the server, and this seems a bit awkward to me.  Need to keep thinking about this one.
 
 * Having never worked with it before, I am happy I got exposed to underscore.js.  It's really nice.
 
+## Great Resources I found when I was trying to figure out how Backbone.js works, or should work
+
+* Again, [the official Backbone.js docs](http://documentcloud.github.com/backbone/)
+* [Backbone.js patterns](http://ricostacruz.com/backbone-patterns/) - outlines some good strategies especially in approaching templating.
+* [Tim Branyen's backbone boilerplate](https://github.com/backbone-boilerplate) I checked out a few boilerplates, but this is the one I liked the most.  Has a great initializer for the Router which helped me understand the routing, and which I'm using in modified form on the Routing example. (also, see my [first StackOverflow question](http://stackoverflow.com/questions/9939737/how-does-one-listen-to-the-router-respond-to-router-events-in-views-models-i) which was a result of me not understanding how routing works.)
+* The Backbone.js github wiki has a [great page consolidating a lot of documentation web resources](https://github.com/documentcloud/backbone/wiki/Extensions%2C-Plugins%2C-Resources). I have yet to really dig into it, although I know I've already checked out a good number of the items listed through separate Google searches.
+* [This explains why you may need to use the underscore bindAll() method in Backbone.js](http://lostechies.com/derickbailey/2011/06/15/solving-backbones-this-model-view-problem-with-underscore-js/).  It's overall a good article to read just to wrap your head around how Backbone.js works.  I also wanted to link to it to note that these guys have a lot of useful articles on Backbone.js.  They don't always purse a strategy I agree with, but they are obviously thinking hard about how to solve problems "appropriately" in Backbone.js.  Worth checking out.
+
 ## Author
 
 Dave Della Costa.  dave-dellacosta at garage d co d jp
+
+Critiques and suggestions welcome.  If you think I've done something in a stupid or inefficient way I'd love to hear it!  Really!!  If I agree I'll change my code.
 
 ## P.S.
 
