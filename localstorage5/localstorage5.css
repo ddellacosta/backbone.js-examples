@@ -1,0 +1,27 @@
+body {
+    font-size: 20px;
+}
+
+h4 {
+    margin-bottom: 20px;
+}
+
+div#contents {
+    margin-top: 20px;
+    width: 900px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+div#links {
+    width: 300px;
+}
+
+div.link {
+    margin-top: 20px;
+}
+
+div.link button {
+    display: block;
+    float: right;
+}

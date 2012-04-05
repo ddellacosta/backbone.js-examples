@@ -1,4 +1,4 @@
-# Backbone.js Tutorials/Explorations
+# Backbone.js Tutorials/Examples/Explorations
 
 This is a collection of simple apps meant to illustrate and explore various techniques used in building Backbone.js apps.  The motivation behind this was that the official [Backbone.js reference](http://backbonejs.org/), while filled with useful information, suffers a bit from being "too close too the code."  Many things are glossed over with the reasoning that Backbone.js is open-ended and doesn't restrict you (which is true).  However, there are definitely some ways that Backbone.js "suggests" you should structure your code, and it is hard to figure these out with what the official docs provide, outside of trial-and-error messing around and navigating the collection of sometimes out-of-date/badly/awkwardly/unconvincingly written tutorials and documentation resources online (although for the record there's a tremendous amount of great stuff online as well).
 
@@ -16,9 +16,9 @@ The code examples represent self-tutorials (or "explorations" or what-have-you) 
 
 4. It's not immediately apparent what the function of routin in Backbone.js is, but I applied my own opinionated (but not original) interpretation here: it should be a way to respond in an event-driven MVC fashion to RESTful urls. By the way, having the console open with this one is useful, it will show you more about what is going on in terms of the Routing.
 
-*TODO: "in the works"*
+5. Backbone.sync using local storage: this example uses the backbone-localstorage.js module provided along with the Todos example in the default distribution. I wanted to try and implement something similar to the Todos example myself, sort of from scratch, and without using a server-side data storage (at first).  This is less complex than the Todos example but more or less does the same thing in terms of allowing the user to input basic data (in this case a link and a description), delete it, and have it be restored from local storage upon reloading the app in the same browser later on.
 
-5 Local storage--may simply re-use the Backbone.js's local storage class?
+*TODO: "in the works"*
 
 6 Using a RESTful application server to store data remotely
 
