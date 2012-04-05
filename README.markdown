@@ -42,7 +42,9 @@ These examples basically represent about a week of digging hardcore into Backbon
 
 * Having never worked with it before, I am happy I got exposed to underscore.js.  It's really nice.
 
-## Great Resources I found when I was trying to figure out how Backbone.js works, or should work
+## Resources
+
+(Great resources I found when I was trying to figure out how Backbone.js works, or should work.)
 
 * Again, [the official Backbone.js docs](http://documentcloud.github.com/backbone/).
 * [Backbone.js patterns](http://ricostacruz.com/backbone-patterns/) - outlines some good strategies especially in approaching templating.
