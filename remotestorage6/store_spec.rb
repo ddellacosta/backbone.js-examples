@@ -103,6 +103,7 @@ describe 'The Store App' do
 
   describe "the web app" do
     it "saves to a JSON array" do
+      # http://webcache.googleusercontent.com/search?q=cache:7ZBaGEFzIwIJ:softwareblog.morlok.net/2010/12/18/testing-post-with-racktest/+rack+test+pass+json+post&cd=1&hl=ja&ct=clnk&gl=jp&client=firefox-a
       url = { :url => 'http://google.com', :desc => 'Google.com', :id => 1}
       post '/links', url.to_json, "CONTENT_TYPE" => "application/json"
 
