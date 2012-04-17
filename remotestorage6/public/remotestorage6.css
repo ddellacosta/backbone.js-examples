@@ -1,0 +1,32 @@
+body {
+    font-size: 40px;
+}
+
+h4 {
+    margin-bottom: 20px;
+}
+
+code#sinatra {
+    display: block;
+    margin-bottom: 20px;
+}
+
+div#contents {
+    margin-top: 20px;
+    width: 900px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+div#links {
+    width: 600px;
+}
+
+div.link {
+    margin-top: 20px;
+}
+
+div.link button {
+    display: block;
+    float: right;
+}
