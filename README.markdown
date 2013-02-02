@@ -1,12 +1,10 @@
 # Backbone.js Tutorials/Examples/Explorations
 
+NOTE: web development moves fast, and these may be out of date.  Pull requests etc. welcome.
+
 This is a collection of simple apps meant to illustrate and explore various techniques used in building Backbone.js apps.  The motivation behind this was that the official [Backbone.js reference](http://backbonejs.org/), while filled with useful information, suffers a bit from being "too close too the code."  Many things are glossed over with the reasoning that Backbone.js is open-ended and doesn't restrict you (which is true).  However, there are definitely some ways that Backbone.js "suggests" you should structure your code, and it is hard to figure these out with what the official docs provide, outside of trial-and-error messing around and navigating the collection of sometimes out-of-date/badly/awkwardly/unconvincingly written tutorials and documentation resources online (although for the record there's a tremendous amount of great stuff online as well).
 
-In addition, the default docs often assume an architecture where many functions are instantiated and called *outside* of Backbone.js code. That is, there is a lot of manipulation of Model/Collection/Event code outside of a View, in application code, whereas in most well-structured architectures I've seen, this happens within a View or Router.  While I understand the goals of the library authors are to show the usage of the code in the simplest manner possible, when actually developing this ends up being rather confusing (to me at least).
-
-The goal of this project is to try and mitigate some of these issues, as well as collect what I believe to be the more useful documentation resources together in one place.
-
-**A caveat: these are not aimed at beginning JS developers, they make a lot of assumptions about being comfortable with OO/Functional programming concepts as well the MVC design pattern.  In picking up Backbone.js I was explicitly attempting to map my MVC experience (primarily in Ruby on Rails) onto this framework (even though Backbone.js doesn't explicitly aim to provide an MVC framework).  These examples reflect that.**
+----
 
 The code examples represent self-tutorials (or "explorations" or what-have-you) which progress roughly in terms of complexity, and in terms of what I thought were the basic concepts which I wanted to grasp, in the order I wanted to grasp them.
 
@@ -14,9 +12,9 @@ The code examples represent self-tutorials (or "explorations" or what-have-you) 
 
 2. Events are a core aspect of Backbone.js, and provide the support for its smooth implementation of automatic updating of various DOM elements, one of Backbone.js's true strengths I believe.  This example simply shows how a click event can be caught in a hopefully "idiomatically" fashion.  It implements a simple up/down counter.
 
-3. Collections give one the ability to manipulate Models as...collections of objects.  While not necessarily a part of the MVC pattern, having a Collection class certainly gives you a lot of utility, and anyone using a language like Ruby or Python will pick it up right away.  In fact, much of this class's utility comes from the great [Underscore.js](http://documentcloud.github.com/underscore/) library, which, being a Ruby coder, made me feel right at home. The collection example ended up being a bit more complex than I had intended, and kind of "smells," but I probably learned the most on this one.  I may re-factor this in the future to provide some more simplicity. *Note: I forget where I got the cat pics.  I'll try to track them down and put in appropriate attribution, but if they are yours and you want me to take them down or give you credit just drop me a line (see my email below, or contact me via github).*
+3. Collections give one the ability to manipulate Models as...collections of objects.  Much of this class's utility comes from the great [Underscore.js](http://documentcloud.github.com/underscore/) library, which, being a Ruby coder, made me feel right at home. The collection example ended up being a bit more complex than I had intended, and kind of "smells," but I probably learned the most on this one.  I may re-factor this in the future to provide some more simplicity. *Note: I forget where I got the cat pics.  I'll try to track them down and put in appropriate attribution, but if they are yours and you want me to take them down or give you credit just drop me a line (see my email below, or contact me via github).*
 
-4. It's not immediately apparent what the function of routing in Backbone.js is, so I applied my own opinionated (but not original) interpretation here: it should be a way to respond in an event-driven MVC fashion to RESTful urls. By the way, having the console open with this one is useful, it will show you more about what is going on, in terms of the Routing.
+4. It's not immediately apparent what the function of routing in Backbone.js is, so I applied my own opinionated (but not original) interpretation here: it should be a way to respond in an event-driven fashion to RESTful urls. By the way, having the console open with this one is useful, it will show you more about what is going on, in terms of the Routing.
 
 5. Backbone.sync using local storage: this example uses the backbone-localstorage.js module provided along with the Todos example in the default distribution. I wanted to try and implement something similar to the Todos example myself, sort of from scratch, and without using a server-side data storage (at first).  This is less complex than the Todos example but more or less does the same thing in terms of allowing the user to input basic data (in this case a link and a description), delete it, and have it be restored from local storage upon reloading the app in the same browser later on.
 
@@ -59,8 +57,4 @@ These examples basically represent about a week of digging hardcore into Backbon
 
 Dave Della Costa.  dave-dellacosta at garage d co d jp
 
-Critiques and suggestions welcome.  If you think I've done something in a inefficient way I'd love to hear it!  If you convince me I'll change my code.
-
-### P.S.
-
-I always forget, I use the console for some of these which means they probably break IE.  [Here ya go.](http://mozilla.org/firefox/)
+Critiques, suggestions, pull requests welcome.
